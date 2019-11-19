@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='css/style_panel.css')}}">
+        <link rel="shortcut icon" href="{{url_for('static', filename='images/icone.png')}}" type="image/x-icon">
+    <title>Title</title>
+</head>
+<body>
+
+<form action = "{{ url_for('pannfawjkfnawjfnajwfnakjjcxnjcaywmawkdmwdwjnmdajhhd') }}" method = 'POST'>
+<input type = submit name = "logout" value="Log out" id = "log_out_submit">
+</form>
+  <img src="./static/images/logo_1.png" align="left">
+  <img src="./static/images/logo_1.png" align="right">
+
+<div class="ddiv">
+    <h1 class = "text_panel" align="center">Welcome back. Again.</h1>
+
+     <form action = "{{ url_for('pannfawjkfnawjfnajwfnakjjcxnjcaywmawkdmwdwjnmdajhhd') }}" method = 'POST'>
+    <input size="100" class="command" name = "command">
+    <input class="butt" type="submit" value="Send">
+     </form>
+
+    <br>
+    <br>
+    <br>
+  <table  border="0" width="100%" cellpadding="5" class="ttable">
+   <tr class="ttr">
+    <th class="text_panel">Id</th>
+    <th class="text_panel">IP-Adrress</th>
+               <th class="text_panel">Date register</th>
+       <th class="text_panel">username</th>
+          <th class="text_panel">OS</th>
+          <th class="text_panel">Code-contry</th>
+          <th class="text_panel">GPU</th>
+          <th class="text_panel">CPU</th>
+          <th class="text_panel">RAM (gb)</th>
+          <th class="text_panel">Windows version</th>
+       <th class="text_panel">Unix-time update</th>
+      {% for n in my_list %}
+   <tr class="ttr">
+             <th class="text_panel">{{n[0]}}</th>
+             <th class="text_panel">{{n[1]}}</th>
+             <th class="text_panel">{{n[2]}}</th>
+             <th class="text_panel">{{n[3]}}</th>
+             <th class="text_panel">{{n[4]}}</th>
+             <th class="text_panel">{{n[5]}}</th>
+             <th class="text_panel">{{n[6]}}</th>
+             <th class="text_panel">{{n[7]}}</th>
+             <th class="text_panel">{{n[8]}}</th>
+             <th class="text_panel">{{n[9]}}</th>
+             <th class="text_panel">{{n[10]}}</th>
+                <th class="text_status">{{n[11]}}</th>
+
+
+   </tr>
+{%endfor%}
+ </table>
+</div>
+
+</body>
+</html>

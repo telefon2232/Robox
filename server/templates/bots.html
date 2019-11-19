@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{%block title%}Bots{%endblock%}
+{%block body%}
+<p class="name">Bots</p>
+<div class="block-bots">
+<p class="bots_all">All bots: {{count_all}}</p>
+<p class="bots_live">Live bots: {{count_live}}</p>
+</div>
+<div class="bots">
+
+  <table>
+   <tr class="head-main">
+       <th class="header">id</th> <th class="header">ip</th> <th class="header">register</th>
+       <th class="header">username</th> <th class="header">os</th> <th class="header">contry</th>
+         <th class="header">gpu</th> <th class="header">cpu</th> <th class="header">ram</th>
+       <th class="header">windows version</th> <th class="header">last jerk</th> <th class="header">status</th>
+
+   </tr>
+
+      {% for n in my_list %}
+   <tr>
+             <th class="text_id">{{n[0]}}</th>
+             <th class="text_panel">{{n[1]}}</th>
+             <th class="text_panel">{{n[2]}}</th>
+             <th class="text_panel">{{n[3]}}</th>
+             <th class="text_panel">{{n[4]}}</th>
+             <th class="text_panel">{{n[5]}}</th>
+             <th class="text_panel">{{n[6]}}</th>
+             <th class="text_panel">{{n[7]}}</th>
+             <th class="text_panel">{{n[8]}}</th>
+             <th class="text_panel">{{n[9]}}</th>
+             <th class="text_panel">{{n[10]}}</th>
+             <th class="text_status">{{n[11]}}</th>
+   </tr>
+      {%endfor%}
+  </table>
+</div>
+
+
+
+{%endblock%}

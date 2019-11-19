@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{%block title%}Dashboard{%endblock%}
+
+{%block body%}
+<p class="name">Dashboard</p>
+
+<div class="logout">
+<form action = "{{ url_for('dashboard') }}" method = 'POST'>
+<input type = submit name = "logout" value="Log out" class="logout-button">
+</form>
+    </div>
+
+<!-- World map containter. Width and height can be set here -->
+<div id="place" style="width:749px;height:500px;"></div>
+
+<script type="text/javascript">
+
+/* Country click handler */
+function countryclick(tld) {
+	alert('Country clicked: '+tld);
+	}
+
+jQuery(document).ready(function(){
+
+	jQuery('#place').SVGWorldMap({
+		bottom:20, /* Bottom padding (removes antarctica from map) */
+		clickhandler :'countryclick', /* Click handler function name */
+		c : {BR:3,RU:2,IN:1,CN:1,US:2,UK:2} /* Country classes */
+		});
+
+	});
+
+</script>
+{%block style%}
+{{super()}}
+<link rel = "stylesheet" type = text/css href = "{{url_for('static', filename = 'css/svgworldmap.css')}}">
+{%endblock%}
+{%endblock%}

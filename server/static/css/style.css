@@ -1,0 +1,105 @@
+﻿body {
+    background-image:url(../images/base_back.png);
+      background-size: 100%;
+}
+.left-text{
+color:antiquewhite;
+    font-size:30px;
+    padding-left:40px;
+     text-decoration: none;
+}
+  a {
+    text-decoration: none;
+      color: aliceblue;
+   }
+
+   TABLE {
+       margin-right:30px;
+
+    border-collapse: collapse; /* Убираем двойные границы между ячейками */
+    background: #75a4ca; /* Цвет фона таблицы */
+    border: 4px solid #18324b; /* Рамка вокруг таблицы */
+   }
+   .head-main{
+       background: #18324b; /* Цвет фона таблицы */
+   }
+   TD {
+ border-bottom: 3px solid black;
+   }
+       TH{
+
+ border-bottom: 1px solid black;
+       }
+.text_panel{
+    color:darkblue;
+}
+.text_id{
+    color:darkred;
+}
+.text_status{
+    color:darkgreen;
+}
+.bots{
+        padding-left:240px;
+  position: absolute;
+    top: 140px;
+    z-index: -1;
+}
+.header{
+font-style:italic;
+    font-size:23px;
+        color:whitesmoke;
+}
+.name{
+   font-size:100px;
+    font-style:italic;
+    color:whitesmoke;
+    top: 35px;
+    margin-top: -450px;
+    margin-left: 240px;
+}
+.butt{
+
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+.div-panel{
+    margin-left: 370px;
+    margin-top:-80px;
+}
+.command{
+     padding: 8px 15px;
+
+      border: 2px solid black;
+  border-radius: 4px;
+}
+.logout{
+    padding-top: 400px;
+    padding-left:60px;
+     text-decoration: none;
+}
+.logout-button{
+    font-size: larger; color: lightcoral; background-color: #0a1e4c; border: 3pt ridge darkblue
+}
+.block-bots {
+        margin-left: 1000px;
+    margin-top:-200px;
+}
+
+.bots_all{
+ font-size: 36px;
+    color:darkgrey;
+}
+.bots_live{
+
+     font-size: 36px;
+    color:springgreen;
+}

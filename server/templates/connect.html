@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="shortcut icon" href="{{url_for('static', filename='images/icone.png')}}" type="image/x-icon">
+    <meta charset="UTF-8">
+
+    <title>Network</title>
+</head>
+<body>
+                <form action = "{{ url_for('connect') }}" method = 'POST'>
+
+   <input type="password" class="text_a" name="password"  placeholder="Password" size="24" >
+        <input class="inp" type="submit" value="Done">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{%block title%}Upload{%endblock%}
+{%block body%}
+<p class="name">Upload</p>
+<div class="div-panel">
+<form method="post" action="upload" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input id="upload-window"  type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit" class="butt">
+	</p>
+</form>
+</div>
+{%endblock%}
